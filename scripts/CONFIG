@@ -1,5 +1,6 @@
 export DOWNLOADS=~/Downloads
 export WORKDIR=~/rpi-hpl-workdir
+export RESULTSDIR=${WORKDIR}/results
 export SCRIPTSDIR=${PWD}
 export SERVICES="snap.lxd.daemon snap.lxd.daemon.unix.socket postfix systemd-timesyncd wpa_supplicant snapd snapd.apparmor.service systemd-resolved snapd.service snapd.socket"
 
