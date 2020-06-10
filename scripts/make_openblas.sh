@@ -7,6 +7,7 @@ package=OpenBLAS
 
 rm -rf ${package}-${version}
 rm -rf ${WORKDIR}/${package}-${version}
+sudo rm -rf /opt/${package}
 wget https://github.com/xianyi/OpenBLAS/archive/develop.tar.gz -O ${DOWNLOADS}/${package}-${version}.tar.gz
 
 cd ${WORKDIR}

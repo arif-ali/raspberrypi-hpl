@@ -5,6 +5,7 @@ package=mpich
 
 rm -rf ${package}-${version}
 rm -rf ${WORKDIR}/${package}-${version}
+sudo rm -rf /opt/${package}/${version}
 wget http://www.mpich.org/static/downloads/${version}/${package}-${version}.tar.gz -O ${DOWNLOADS}/${package}-${version}.tar.gz
 
 cd ${WORKDIR}
