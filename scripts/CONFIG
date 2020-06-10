@@ -1,9 +1,21 @@
+#
+# Default variables that we want to use in all of our scripts
+#
 export DOWNLOADS=~/Downloads
 export WORKDIR=~/rpi-hpl-workdir
 export RESULTSDIR=${WORKDIR}/results
 export SCRIPTSDIR=${PWD}
 export SERVICES="snap.lxd.daemon snap.lxd.daemon.unix.socket postfix systemd-timesyncd wpa_supplicant snapd snapd.apparmor.service systemd-resolved snapd.service snapd.socket"
 
+#
 # Flags based on https://en.wikichip.org/wiki/arm_holdings/microarchitectures/cortex-a72
+#
 export COMMON_FLAGS="-mtune=cortex-a72"
+
+#
+# This variable masks the fact if you want to write to output file or not
+# With a system that has SD card that is non-performant, then this value
+# with 1 may slow the overall HPL benchmark down
+#
+WRITE_OUT_FILE=0
 
