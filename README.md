@@ -1,5 +1,7 @@
 # Compile and Running HowTo
 
+**Note**: These scripts have been tested on Ubuntu 20.04 aarch64 on a Raspberry Pi 4 4GB. *Use at your own risk*
+
 This is a collection of scripts and configuration that would
 allow to compile and run the benchmark in a consistent way
 
